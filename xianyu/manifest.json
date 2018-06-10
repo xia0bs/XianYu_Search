@@ -1,0 +1,21 @@
+{ 
+	"manifest_version": 2, 
+	"name": "XianYu_Search", 
+	"version": "1.0", 
+	"description": "找回咸鱼去掉的搜索框", 
+	"browser_action": { 
+	"default_icon": "1.jpg" 
+}, 
+	"permissions": [ 
+		"http://*/", 
+		"bookmarks", 
+		"tabs", 
+		"history" 
+	], 
+	"content_scripts": [ 
+		{ 
+		"matches": ["https://2.taobao.com/"], 
+		"js": ["test.js"] 
+		} 
+	] 
+}
